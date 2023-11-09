@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmxViewTransitions", "HtmxViewTransitions\HtmxViewTransitions.csproj", "{5548E29D-B8F5-4F81-9DA5-BD02957F7BAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5548E29D-B8F5-4F81-9DA5-BD02957F7BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5548E29D-B8F5-4F81-9DA5-BD02957F7BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5548E29D-B8F5-4F81-9DA5-BD02957F7BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5548E29D-B8F5-4F81-9DA5-BD02957F7BAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

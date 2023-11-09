@@ -1,0 +1,63 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+
+@keyframes fade-out {
+  to { opacity: 0; }
+}
+
+@keyframes slide-from-right {
+  from { transform: translateX(90px); }
+}
+
+@keyframes slide-to-left {
+  to { transform: translateX(-90px); }
+}
+
+/* define animations for the old and new content */
+::view-transition-old(slide-it) {
+  animation: 180ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+  600ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+}
+::view-transition-new(slide-it) {
+  animation: 420ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+  600ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+}
+
+body {
+  margin-bottom: 60px;
+  view-transition-name: slide-it;
+}
+
+.navbar {
+  view-transition-name: main-header-text;
+  /* Prevent the default animation, so both views remain opacity:1 throughout the transition */
+  animation: none;
+  /* Use normal blending, so the new view sits on top and obscures the old view */
+  mix-blend-mode: normal;
+}
+
+footer {
+  view-transition-name: footer;
+  animation: none;
+  mix-blend-mode: normal;
+}
